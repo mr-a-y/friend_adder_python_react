@@ -4,7 +4,7 @@ import { LuSun } from "react-icons/lu";
 import CreateUserModel from "./CreateUserModel";
 
 const Navbar = ({setUsers}) => {
-    const { colorMode, toggleColorMode } = useColorMode();
+    const { colorMode, toggleColorMode } = useColorMode(); // react state function for togling between light and dark mode
     return (
         <Container maxW={"900px"}>
             <Box px={4} my={4} borderRadius={5} bg={useColorModeValue("gray.200", "gray.700")}>
@@ -15,7 +15,9 @@ const Navbar = ({setUsers}) => {
                         <Text fontSize={"40px"}>+</Text>
                         <img src="/python.png" alt="python logo" width={50} height={40} />
                         <Text fontSize={"40px"}>=</Text>
-                        <img src="/coding.png" alt="coding representation " width={45} height={45} />
+                        <a href="https://github.com/mr-a-y/friend_adder_python_react" target="_blank" rel="noopener noreferrer">
+                            <img src="/coding.png" alt="coding representation " width={45} height={45} />
+                        </a>
                     </Flex>
 
                     {/*Center*/}

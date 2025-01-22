@@ -107,6 +107,7 @@ const CreateUserModel = ({setUsers}) => {
                                         placeholder="John Doe"
                                         value={inputs.name}
                                         onChange={(e) => setInputs({...inputs, name: e.target.value})}
+                                        maxlength="20"
                                     />
                                 </FormControl>
 
@@ -116,6 +117,7 @@ const CreateUserModel = ({setUsers}) => {
                                         placeholder="Developer"
                                         value={inputs.role}
                                         onChange={(e) => setInputs({...inputs, role: e.target.value})}
+                                        maxlength="20"
                                     />
                                 </FormControl>
                             </Flex>       
@@ -126,6 +128,7 @@ const CreateUserModel = ({setUsers}) => {
                                     placeholder="Learning to code"
                                     value={inputs.description}
                                     onChange={(e) => setInputs({...inputs, description: e.target.value})}
+                                    maxlength="450"
                                 />
                             </FormControl>
 

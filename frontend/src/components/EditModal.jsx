@@ -104,13 +104,14 @@ return (
                         <Flex alignItems={"center"} gap={4}>
                             <FormControl>
                                 <FormLabel>Full Name</FormLabel>
-                                <Input placeholder='John Doe' value={inputs.name} onChange={(e) => setInputs({...inputs, name: e.target.value})}/>
+                                <Input placeholder='John Doe' value={inputs.name} onChange={(e) => setInputs({...inputs, name: e.target.value})} maxlength="20"/>
                             </FormControl>
 
                             <FormControl>
                                 <FormLabel>Role</FormLabel>
                                 <Input placeholder="Developer"
                                         value={inputs.role}
+                                        maxlength="20"
                                         onChange={(e) => setInputs({...inputs, role: e.target.value})} />
                             </FormControl>
                         </Flex>
@@ -120,6 +121,7 @@ return (
                                 resize={"none"}
                                 overflowY={"hidden"}
                                 value={inputs.description}
+                                maxlength="450"
                                     onChange={(e) => setInputs({...inputs, description: e.target.value})}
                                 placeholder="He's a software engineer who loves to code and build things."
                             />
